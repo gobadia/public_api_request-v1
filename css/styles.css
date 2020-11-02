@@ -1,4 +1,4 @@
-/* ===================================== 
+/* =====================================
    Public API Request
 ======================================== */
 
@@ -63,7 +63,7 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Gallery
 ======================================== */
 
@@ -76,7 +76,13 @@ header h1 {
     max-width: 1200px;
     margin: auto;
 }
-  
+
+
+/*ADDED TO ALLOW CLICKS ANYWHERE IN CARD TO GENERATE MODAL */
+.card > * {
+  pointer-events: none;
+}
+
 .card {
     display: flex;
     flex-direction: row;
@@ -93,6 +99,8 @@ header h1 {
     transition: .4s ease-out;
     overflow: hidden;
 }
+
+
 
 .card-img {
     width: 95px;
@@ -120,7 +128,7 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Modal
 ======================================== */
 
@@ -144,6 +152,10 @@ header h1 {
     border-radius: 0.25em;
     border: 1px solid rgba(100, 100, 100, 0.3);
     transition: .4s ease-out;
+}
+/*ADDED TO AVOID ERRORS WITH CLICKING ON TEXT IN BUTTON */
+.modal-close-btn > *{
+	pointer-events: none;
 }
 
 .modal-close-btn {
@@ -206,13 +218,13 @@ header h1 {
     transition: .4s ease-out;
     outline: none;
   }
-  
 
-/* ===================================== 
+
+/* =====================================
    Media Queries
 ======================================== */
 
-/* ===================================== 
+/* =====================================
    Tablet
 ======================================== */
 
@@ -240,9 +252,9 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Desktop
-   Hover styles on desktop 
+   Hover styles on desktop
 ======================================== */
 
 @media (min-width: 1024px) {
@@ -253,11 +265,11 @@ header h1 {
     }
 
     .card:hover .card-text {
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(25, 25, 25, 1);
     }
 
     .btn:hover {
         background: rgba(255, 255, 255, 1);
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(25, 25, 25, 1);
     }
 }
