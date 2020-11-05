@@ -16,7 +16,8 @@ html, body {
 body {
     font-family: "Nunito", sans-serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+    /*background: rgba(235, 235, 235, 0.9);*/
+		background: #bde8fc;
 }
 
 header {
@@ -93,7 +94,8 @@ header h1 {
     max-width: 360px;
     margin: 10px 10px 20px;
     padding: 10px;
-    background: rgba(245, 245, 245, 0.9);
+    /*background: rgba(245, 245, 245, 0.9);*/
+		background: white;
     border-radius: 0.25em;
     border: 1px solid rgba(50, 50, 50, 0.3);
     transition: .4s ease-out;
@@ -141,17 +143,22 @@ header h1 {
     background: rgba(0, 0, 0, 0.7);
 }
 
+
 .modal {
     position: relative;
     width: 95%;
     max-width: 420px;
-    min-height: 415px;
+    min-height: 280px;
     margin: 10px auto auto;
     padding-bottom: 15px;
     background: rgba(255, 255, 255, 1);
     border-radius: 0.25em;
     border: 1px solid rgba(100, 100, 100, 0.3);
     transition: .4s ease-out;
+}
+
+.modal-info-container{
+	padding-left: 10px;
 }
 /*ADDED TO AVOID ERRORS WITH CLICKING ON TEXT IN BUTTON */
 .modal-close-btn > *{
@@ -170,24 +177,46 @@ header h1 {
     border: 1px solid rgba(50, 50, 50, 0.3);
 }
 
+
 .modal-img {
-    width: 150px;
+	float: left;
+
+  /*width: 150px; */
+		width: 35%;
     margin-top: 35px;
     border-radius: 50%;
+		border: 5px solid #bde8fc;
+
+
 }
 
 .modal-name {
-    margin-bottom: 5px;
+	float: left;
+	text-align: left;
+	margin: 10px;
+	width: 60%;
+  /*margin-bottom: 5px;*/
 }
 
 .modal-text {
-    color: rgba(50, 50, 50, 0.7);
-    margin: 10px;
+	padding-left: 35%;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	/*padding-left: 30%;*/
+  color: rgba(50, 50, 50, 0.7);
+}
+.modal p{
+	display: block;
+
 }
 
 .modal hr {
-    width: 75%;
-    margin: 25px auto 30px;
+    width: 40%;
+		clear: right;
+		padding-left: 5px;
+    /*margin: 25px auto 30px; */
     border-color: rgba(200, 200, 200, 0.2);
 }
 
@@ -210,10 +239,12 @@ header h1 {
     display: inline-block;
     cursor: pointer;
     font-size: 0.85em;
+		font-weight: bold;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.9);
     padding: 0.75em 1.5em;
-    background: rgba(0, 0, 0, 0.8);
+    /*background: rgba(0, 0, 0, 0.8);*/
+		background: blue;
     border-radius: 0.35em;
     transition: .4s ease-out;
     outline: none;
@@ -260,7 +291,8 @@ header h1 {
 @media (min-width: 1024px) {
 
     .card:hover {
-        background: rgba(255, 255, 255, 1);
+        /*background: rgba(255, 255, 255, 1);*/
+				background: #dbdbdb;
         border: 1px solid rgba(50, 50, 50, 0.9);
     }
 
